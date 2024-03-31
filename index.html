@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation Management System</title>
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="project.js" type="text/Javascript">
+  
+</head>
+<body>
+  <header>
+    <h1>Blood Donation Management System</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Donate Blood</a></li>
+      <li><a href="#">Find Blood</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="donorForm">
+      <h2>Donate Blood</h2>
+      <form id="donorForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="bloodGroup">Blood Group:</label>
+        <select id="bloodGroup" name="bloodGroup" required>
+          <option value="">Select Blood Group</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="bloodRequest">
+      <h2>Find Blood</h2>
+      <form id="bloodRequestForm">
+        <label for="bloodGroupNeeded">Blood Group Needed:</label>
+        <select id="bloodGroupNeeded" name="bloodGroupNeeded" required>
+          <option value="">Select Blood Group</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Blood Donation Management System</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
